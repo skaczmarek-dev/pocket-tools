@@ -1,0 +1,12 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
+
+# Ignore settings files
+settings.json
+
+# Ignore output data
+pocket_all_data.json
