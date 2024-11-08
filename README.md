@@ -5,6 +5,22 @@ Python-powered toolkit to supercharge your pocket experience! 🛠️ easily man
 
 # Installation
 
+Create isolated Python environment if you wish to - please refer to my [article](https://skaczmarek-dev.github.io/posts/python-venv/).
+
+Clone repository:
+
+```
+$ git clone https://github.com/skaczmarek-dev/pocket-tools
+```
+
+Install dependencies:
+
+```
+$ pip install -r pocket-tools/requirements.txt
+```
+
+## Prepare configuration file
+
 # How to run this program
 
 ```
