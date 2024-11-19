@@ -88,7 +88,7 @@ $ pip install -r pocket-tools/requirements.txt
 
 ## Prepare configuration file
 
-1. Create file `config/settings.json` with following credentials obtained in step 2.:
+Create file `config/settings.json` with following credentials obtained in step 2. and 4.:
 
 ```json
 {
