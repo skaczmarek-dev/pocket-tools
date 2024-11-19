@@ -9,16 +9,15 @@ You need to acomplish following steps in order to get access token for your appl
 
 ## Step 1: Register Your Application
 
-1. Visit [Pocket Developers](https://getpocket.com/developer/).
-2. Click **"Create New App"**.
-3. Set your app permissions:
+1. Visit [Pocket Developers Signup](https://getpocket.com/developer/apps/new.php?&src=signup).
+2. Set your app permissions:
    - **Read Only**: if the app only retrieves data.
    - **Add, Modify**: if the app also adds or modifies data.
-4. Note down the generated `consumer_key`.
+3. Note down the generated `consumer_key`.
 
 ## Step 2: Obtain a Request Token
 
-1. Run the following `curl` command to request a `request_token` (replace YOUR_CONSUMER_KEY with your application's key.):
+1. Run the following `curl` command to request a `request_token` (replace YOUR_CONSUMER_KEY with your application's key. replace redirect_uri with the url of your application or leave it as it is if you are working in CLI, as we do in this case):
 
 ```bash
 curl https://getpocket.com/v3/oauth/request -X POST \
