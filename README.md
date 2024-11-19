@@ -26,7 +26,7 @@ curl https://getpocket.com/v3/oauth/request -X POST \
 -H "X-Accept: application/json" \
 -d "{\"consumer_key\":\"YOUR_CONSUMER_KEY\",\"redirect_uri\":\"urn:ietf:wg:oauth:2.0:oob\"}"
 ```
-2. You will receive a response in JSON format, e.g. (note the your_request_token value.):
+2. You will receive a response in JSON format, e.g. (note the your_request_token value.) use it in the next step:
 
 ```json
 {"code":"your_request_token"}
@@ -34,14 +34,14 @@ curl https://getpocket.com/v3/oauth/request -X POST \
 
 ## Step 3: Authorize the Application
 
-1. Paste the following link to the browser:
+1. Paste the following link to the browser (paste token from the previous step in place of "your_request_token"):
 
 ```bash
 https://getpocket.com/auth/authorize?request_token=your_request_token&redirect_uri=urn:ietf:wg:oauth:2.0:oob
 ```
 
-2. The user opens the link and authorizes the application.
-3. After successful authorization, the user will see a confirmation message. No further action in the browser is needed.
+2. Open the link and authorize the application.
+3. After successful authorization, you will see a confirmation message. No further action in the browser is needed.
 
 ## Step 4: Exchange the Request Token for an Access Token
 
