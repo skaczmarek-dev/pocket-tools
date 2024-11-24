@@ -145,5 +145,10 @@ $ python3 main.py
 Run tests form the directory of a `pocket-tools`
 
 ```
-$ python3 ./tests/test_pocket.py
+$ python3 -m unittest tests/test_pocket.py
 ```
+
+## TODO
+
+- [] simplify the installation process with setup.py
+
